@@ -1,0 +1,12 @@
+<div class="container-fluid">
+
+<p>Are you sure you want to delete "{{item}}"?</p>
+
+<a href="{% url 'list' %}" ><button>Cancel</button></a>
+<br><br>
+<form method="POST" action="">
+	{% csrf_token %}
+	<input type="submit" name="Confirm">
+</form>
+
+</div>
